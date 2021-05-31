@@ -1,17 +1,49 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .navbar {
   display: flex;
   width: 100%;
   height: 8vh;
-  background: #252422;
+  background: #0d0d0d;
   justify-content: flex-end;
   align-items: center;
-  font-size: 25px;
-  color: rgb(240, 240, 240);
+  font-size: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
-.navbar > div {
+.navbar > a {
   margin-right: auto;
   max-width: 30%;
   width: 100%;
   text-align: center;
+  cursor: pointer;
+  color: rgb(240, 240, 240);
+  text-decoration: none;
+}
+
+.navbar > section {
+  max-width: 40%;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navbar > section > a {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: rgb(240, 240, 240);
+  text-decoration: none;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.navbar > section > a:hover {
+  color: rgb(168, 168, 168);
 }

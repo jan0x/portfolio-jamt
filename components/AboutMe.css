@@ -1,0 +1,57 @@
+.about-me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #f2f2f2;
+}
+
+.animation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.animation > h2,
+.animation > p {
+  max-width: 70%;
+  width: 100%;
+  line-height: 35px;
+  animation-timing-function: ease-in;
+  display: inline-block;
+}
+
+@keyframes showAnimation {
+  from {
+    transform: translate(0, 100px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes hideAnimation {
+  from {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  to {
+    transform: translate(0, -100px);
+    opacity: 0;
+  }
+}
+
+.animation > h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.about-u {
+  height: 100vh;
+  background: #adadad;
+  width: 100%;
+}

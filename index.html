@@ -9,24 +9,34 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="/components/Header.css">
 	<link rel="stylesheet" href="/components/NavBar.css">
-	<script src="index.js"></script>
+	<link rel="stylesheet" href="/components/AboutMe.css">
 </head>
 <body>
-	<header class="cover">
+	<header class="cover" id="cover">
 		<video class="video" src="/multimedia/cover_video.mp4" loop autoplay muted></video>
 		<h1>Diego Díaz</h1>
 		<p>Front End Developer</p>
 	</header>
 	<nav class="navbar">
-		<div>DIEGO DÍAZ</div>
+		<a href="#cover">DIEGO DÍAZ</a>
 		<section>
-			<li>ABOUT ME</li>
-			<li>PROJECTS</li>   
-			<li>SKILLS</li>
-			<li>CONTACT</li>
+			<a href="#about-me">ABOUT ME</a>
+			<a href="#projects">PROJECTS</a>   
+			<a href="#skills">SKILLS</a>
+			<a href="#contact">CONTACT</a>
 		</section>
 		<svg class="menu-icon" version="1.1" height="64" width="64" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"> <path fill="currentcolor" d="M257,0C116.39,0,0,114.39,0,255s116.39,257,257,257s255-116.39,255-257S397.61,0,257,0z M392,285H287v107 c0,16.54-13.47,30-30,30c-16.54,0-30-13.46-30-30V285H120c-16.54,0-30-13.46-30-30c0-16.54,13.46-30,30-30h107V120 c0-16.54,13.46-30,30-30c16.53,0,30,13.46,30,30v105h105c16.53,0,30,13.46,30,30S408.53,285,392,285z"/>
 		</svg>
 	</nav>
+	<div class="about-me" id="about-me">
+		<div class="animation" id="animation">
+			<h2>Let me tell you something about me</h2>
+        	<p>
+				I’m passionate about all things JavaScript. I’m a self-taught programmer. I work hard, I care about writing clean and I really love learning. I'm currently looking for the right opportunity to work in an environment that will help me progress in a Front-End developer role.
+        	</p>
+		</div>
+	</div>
+	<div class="about-u">hola</div>
+	<script src="index.js"></script>
 </body>
 </html>
