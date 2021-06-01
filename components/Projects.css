@@ -1,13 +1,26 @@
 .porjects-container {
-  position: fixed;
-  top: 8vh;
-  height: 92vh;
+  height: 100vh;
   background: #adadad;
   width: 100%;
   z-index: -3;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.porjects-container > span {
+  max-width: 40%;
+  width: 100%;
+}
+
+.porjects-container > span > h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.porjects-container > span > p {
+  font-size: 20px;
 }
 
 .porjects-container > section {
@@ -19,6 +32,64 @@
 
 .porjects-container > section > a {
   width: 166px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 5px;
+  color: rgb(240, 240, 240);
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+.porjects-container > section > a > img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.porjects-container > section > a > div {
+  opacity: 0;
+  transition: all 0.3s ease-in;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.porjects-container > section > a > div > h3 {
+  position: relative;
+  top: -50px;
+  transition: all 0.3s ease-in;
+}
+
+.porjects-container > section > a > div > p {
+  position: relative;
+  top: 100px;
+  margin: 0 5px 5px;
+  font-size: 15px;
+  transition: all 0.3s ease-in;
+}
+
+.porjects-container > section > a:hover > img {
+  transform: scale(1.5);
+  filter: brightness(40%);
+}
+
+.porjects-container > section > a:hover > div {
+  opacity: 1;
+}
+
+.porjects-container > section > a:hover > div > h3 {
+  top: 0px;
+}
+
+.porjects-container > section > a:hover > div > p {
+  top: 0;
 }
 
 /* .skills {
