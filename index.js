@@ -16,3 +16,4 @@ const animations = (elementId) => {
 };
 
 window.addEventListener("scroll", () => animations("animation"));
+window.addEventListener("scroll", () => animations("about-me-footer"));
