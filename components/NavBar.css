@@ -40,6 +40,10 @@ html {
   text-decoration: none;
 }
 
+#menu-checkbox {
+  display: none;
+}
+
 .menu-icon {
   display: none;
 }
