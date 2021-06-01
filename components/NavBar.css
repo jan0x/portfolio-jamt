@@ -19,10 +19,12 @@ html {
   margin-right: auto;
   max-width: 30%;
   width: 100%;
-  text-align: center;
   cursor: pointer;
   color: rgb(240, 240, 240);
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navbar > section {
@@ -35,13 +37,16 @@ html {
 
 .navbar > section > a {
   cursor: pointer;
-  transition: all 0.3s ease;
   color: rgb(240, 240, 240);
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
 }
 
 #menu-checkbox {
-  display: none;
+  visibility: hidden;
 }
 
 .menu-icon {
@@ -50,4 +55,96 @@ html {
 
 .navbar > section > a:hover {
   color: rgb(168, 168, 168);
+}
+
+@media screen and (max-width: 500px) {
+  .navbar {
+    position: fixed;
+    top: auto;
+    bottom: 30px;
+    right: 30px;
+    width: 40%;
+    flex-direction: column;
+    background: none;
+    height: auto;
+  }
+
+  .navbar > a {
+    visibility: hidden;
+    justify-content: flex-start;
+    margin-right: 0;
+    max-width: 100%;
+    color: #0d0d0d;
+    font-weight: bold;
+    flex-direction: row-reverse;
+    margin-bottom: -25px;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+  }
+
+  .navbar > a > div {
+    margin-left: 10px;
+    margin-bottom: 5px;
+    border: 10px solid #0d0d0d;
+    background: #0d0d0d;
+    border-radius: 50%;
+  }
+
+  .navbar > section {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .navbar > section > a {
+    visibility: hidden;
+    color: #0d0d0d;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    font-weight: bold;
+    margin-bottom: -25px;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+  }
+
+  .navbar > section > a > div {
+    margin-left: 10px;
+    margin-bottom: 5px;
+    border: 10px solid #0d0d0d;
+    background: #0d0d0d;
+    border-radius: 50%;
+  }
+
+  .navbar > label {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    align-items: center;
+  }
+
+  .navbar > label > div {
+    margin-left: 10px;
+    border: 10px solid #0d0d0d;
+    background: #0d0d0d;
+    border-radius: 50%;
+    transition: all 0.3s ease-in;
+  }
+
+  .menu-icon {
+    display: block;
+    margin-left: 0;
+    color: rgb(240, 240, 240);
+  }
+
+  /* ANIMACIONES HOVER */
+  #menu-checkbox:checked ~ section > a,
+  #menu-checkbox:checked ~ a {
+    visibility: visible;
+    margin-bottom: 0;
+    opacity: 1;
+  }
+
+  #menu-checkbox:checked ~ label > div {
+    transform: rotate(135deg);
+  }
 }
