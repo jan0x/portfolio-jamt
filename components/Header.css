@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: center;
   color: rgb(240, 240, 240);
+  position: relative;
 }
 
 .video {
