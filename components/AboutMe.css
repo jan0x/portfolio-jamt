@@ -5,6 +5,7 @@
   height: 100vh;
   background: #f2f2f2;
   flex-direction: column;
+  width: 100%;
 }
 
 .animation {
@@ -60,4 +61,22 @@
 
 .about-me-footer > section > li {
   margin: 0 25px;
+}
+
+@media screen and (max-width: 500px) {
+  .animation {
+    width: 85%;
+  }
+
+  .animation > div {
+    max-width: 100%;
+  }
+
+  .animation > div > h2 {
+    font-size: 30px;
+  }
+
+  .about-me-footer {
+    display: none;
+  }
 }

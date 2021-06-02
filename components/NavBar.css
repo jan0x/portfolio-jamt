@@ -46,7 +46,7 @@ html {
 }
 
 #menu-checkbox {
-  visibility: hidden;
+  display: none;
 }
 
 .menu-icon {
@@ -63,7 +63,7 @@ html {
     top: auto;
     bottom: 30px;
     right: 30px;
-    width: 40%;
+    width: 41.5%;
     flex-direction: column;
     background: none;
     height: auto;
@@ -136,7 +136,7 @@ html {
     color: rgb(240, 240, 240);
   }
 
-  /* ANIMACIONES HOVER */
+  /* ANIMACIONES CHECKED */
   #menu-checkbox:checked ~ section > a,
   #menu-checkbox:checked ~ a {
     visibility: visible;
