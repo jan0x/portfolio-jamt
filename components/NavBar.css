@@ -59,27 +59,29 @@ html {
 
 @media screen and (max-width: 800px) {
   .navbar {
+    width: auto;
     position: fixed;
     top: auto;
     bottom: 30px;
     right: 30px;
-    width: 46%;
     flex-direction: column;
     background: none;
     height: auto;
+    align-items: flex-end;
   }
 
   .navbar > a {
     visibility: hidden;
     justify-content: flex-start;
     margin-right: 0;
-    max-width: 100%;
+    max-width: none;
     color: #0d0d0d;
     font-weight: bold;
     flex-direction: row-reverse;
-    margin-bottom: -25px;
+    margin-bottom: -64px;
     transition: all 0.3s ease-in-out;
     opacity: 0;
+    width: auto;
   }
 
   .navbar > a > div {
@@ -92,17 +94,16 @@ html {
 
   .navbar > section {
     flex-direction: column;
-    max-width: 100%;
+    max-width: none;
   }
 
   .navbar > section > a {
-    visibility: hidden;
     color: #0d0d0d;
     display: flex;
     justify-content: flex-start;
     width: 100%;
     font-weight: bold;
-    margin-bottom: -25px;
+    margin-bottom: -64px;
     transition: all 0.3s ease-in-out;
     opacity: 0;
   }
@@ -120,19 +121,17 @@ html {
   }
 
   .navbar > label {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    align-items: center;
+    display: block;
   }
 
   .navbar > label > div {
-    transform: scale(0, 0);
-    transition: all 0.3s ease;
     margin-left: 10px;
     border: 10px solid #0d0d0d;
     background: #0d0d0d;
     border-radius: 50%;
+  }
+
+  #show-menu-icon > svg {
     transition: all 0.3s ease-in;
   }
 
@@ -148,9 +147,10 @@ html {
     visibility: visible;
     margin-bottom: 0;
     opacity: 1;
+    height: auto;
   }
 
-  #menu-checkbox:checked ~ label > div {
+  #menu-checkbox:checked ~ label > div > svg {
     transform: rotate(135deg);
   }
 }
