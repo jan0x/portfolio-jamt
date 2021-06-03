@@ -1,6 +1,6 @@
 .porjects-container {
   height: 100vh;
-  background: #adadad;
+  background: #c4c4c4;
   width: 100%;
   z-index: -3;
   display: flex;
@@ -47,7 +47,7 @@
 }
 
 .porjects-container > section > a > div {
-  opacity: 0;
+  visibility: hidden;
   transition: all 0.3s ease-in;
   position: absolute;
   top: 0;
@@ -92,7 +92,29 @@
   top: 0;
 }
 
-@media screen and (max-width: 500px) {
+@keyframes animation2 {
+  from {
+    transform: translate(-100px, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes animation3 {
+  from {
+    transform: translate(50px, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 800px) {
   .porjects-container {
     flex-direction: column;
     justify-content: center;
@@ -104,13 +126,24 @@
     margin-bottom: 15px;
   }
 
-  .porjects-container > section {
-    max-width: 85%;
-    flex-direction: column;
-    align-items: center;
+  .porjects-container > span > h2 {
+    font-size: 30px;
   }
 
-  .porjects-container > section > a {
-    margin-bottom: 25px;
+  .porjects-container > section {
+    max-width: 85%;
+    margin-top: 35px;
+  }
+
+  @media screen and (max-width: 500px) {
+    .porjects-container > section {
+      max-width: 60%;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .porjects-container > section > a {
+      margin-bottom: 25px;
+    }
   }
 }

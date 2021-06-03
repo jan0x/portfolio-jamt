@@ -57,13 +57,13 @@ html {
   color: rgb(168, 168, 168);
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
   .navbar {
     position: fixed;
     top: auto;
     bottom: 30px;
     right: 30px;
-    width: 41.5%;
+    width: 46%;
     flex-direction: column;
     background: none;
     height: auto;
@@ -107,6 +107,10 @@ html {
     opacity: 0;
   }
 
+  .navbar > section > a:hover {
+    color: #1d1d1d;
+  }
+
   .navbar > section > a > div {
     margin-left: 10px;
     margin-bottom: 5px;
@@ -123,6 +127,8 @@ html {
   }
 
   .navbar > label > div {
+    transform: scale(0, 0);
+    transition: all 0.3s ease;
     margin-left: 10px;
     border: 10px solid #0d0d0d;
     background: #0d0d0d;

@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="/components/NavBar.css">
 	<link rel="stylesheet" href="/components/AboutMe.css">
 	<link rel="stylesheet" href="/components/Projects.css">
+	<link rel="stylesheet" href="/components/Skills.css">
 </head>
 <body>
 	<!-- COVER -->
@@ -58,7 +59,7 @@
 			</a>
 		</section>
 		<label for="menu-checkbox">
-			<div>
+			<div id="show-menu-icon">
 				<svg class="menu-icon" height="32" viewBox="0 0 426.66667 426.66667" width="32" xmlns="http://www.w3.org/2000/svg"><path fill="currentcolor" d="m405.332031 192h-170.664062v-170.667969c0-11.773437-9.558594-21.332031-21.335938-21.332031-11.773437 0-21.332031 9.558594-21.332031 21.332031v170.667969h-170.667969c-11.773437 0-21.332031 9.558594-21.332031 21.332031 0 11.777344 9.558594 21.335938 21.332031 21.335938h170.667969v170.664062c0 11.777344 9.558594 21.335938 21.332031 21.335938 11.777344 0 21.335938-9.558594 21.335938-21.335938v-170.664062h170.664062c11.777344 0 21.335938-9.558594 21.335938-21.335938 0-11.773437-9.558594-21.332031-21.335938-21.332031zm0 0"/></svg>
 			</div>
 			
@@ -86,11 +87,11 @@
 	</div>
 	<!-- PROJECTS -->
 	<div class="porjects-container" id="projects">
-		<span>
+		<span id="projects-text">
 			<h2>My Projects</h2>
 			<p>Here you can see some of my recently projects, I hope you to enjoy them.</p>
 		</span>
-		<section>
+		<section id="projects-list">
 			<a
           		href="https://codesandbox.io/embed/empty-star-h0p3v?fontsize=14&hidenavigation=1&theme=dark"
          		target="_blank" rel="noreferrer"
@@ -117,7 +118,53 @@
         	</a>
 		</section>
 	</div>
-	<!-- <div class="skills">HOLA MUNDO</div> -->
+	<!-- SKILLS -->
+	<div class="skills-container" id="skills">
+		<span id="skills-text">
+			<h2>Skills</h2>
+			<p>
+				In this section you can see the languages I can handle.
+			</p>
+		</span>
+
+		<section id="languages">
+			<ul>
+				<li>
+					<img src="multimedia/react.png" alt="react.js logo">
+					<p>React.js</p>
+				</li>
+				<li>
+					<img src="multimedia/html.png" alt="html logo">
+					<p>HTML</p>
+				</li>
+				<li>
+					<img src="multimedia/css.png" alt="css logo">
+					<p>CSS</p>
+				</li>
+				<li>
+					<img src="multimedia/javascript.png" alt="javascript logo">
+					<p>JavaScript</p>
+				</li>
+				<li>
+					<img src="multimedia/git.png" alt="git logo">
+					<p>Git</p>
+				</li>
+				<li>
+					<img src="multimedia/github.png" alt="github logo">
+					<p>GitHub</p>
+				</li>
+				<li>
+					<img src="multimedia/node.png" alt="node.js logo">
+					<p>Node.js</p>
+				</li>
+				<li>
+					<img src="multimedia/sass.png" alt="sass logo">
+					<p>Sass</p>
+				</li>
+			</ul>
+		</section>
+
+	</div>
 	<script src="index.js"></script>
 </body>
 </html>

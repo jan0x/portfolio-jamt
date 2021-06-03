@@ -63,7 +63,7 @@
   margin: 0 25px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
   .animation {
     width: 85%;
   }
@@ -76,7 +76,9 @@
     font-size: 30px;
   }
 
-  .about-me-footer {
-    display: none;
+  @media screen and (max-width: 500px) {
+    .about-me-footer {
+      display: none;
+    }
   }
 }
