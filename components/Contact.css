@@ -195,7 +195,7 @@
   }
 }
 
-@media screen and (min-width: 300px) and (max-width: 1200px) {
+/* @media screen and (min-width: 300px) and (max-width: 1200px) {
   .social-media {
     clip-path: circle(150% at 50% 190%);
     height: 40vh;
@@ -247,6 +247,67 @@
   @media screen and (min-height: 1000px) {
     .social-media {
       clip-path: circle(150% at 50% 230%);
+    }
+  }
+} */
+
+@media screen and (min-width: 300px) and (max-width: 1200px) and (orientation: portrait) {
+  .social-media {
+    clip-path: circle(150% at 50% 190%);
+    height: 40vh;
+  }
+
+  .social-media > a {
+    top: 25%;
+    transform: translate(0 -25%);
+  }
+
+  .social-media > section {
+    top: 50%;
+    transform: translate(0 -50%);
+  }
+
+  .quote {
+    display: none;
+  }
+
+  .info-contact {
+    height: 60vh;
+  }
+
+  .info-contact > h1 {
+    font-size: 40px;
+  }
+  .info-contact > div > ul > li {
+    width: auto;
+  }
+
+  .info-contact > div > p,
+  .info-contact > div > ul {
+    font-size: 25px;
+  }
+
+  .info-contact > span {
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    font-size: 15px;
+  }
+
+  @media screen and (min-height: 800px) and (orientation: portrait) {
+    .social-media {
+      clip-path: circle(150% at 50% 165%);
+      height: 50vh;
+    }
+
+    .info-contact {
+      height: 50vh;
+    }
+
+    @media screen and (min-height: 1000px) {
+      .social-media {
+        clip-path: circle(150% at 50% 200%);
+      }
     }
   }
 }
