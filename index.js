@@ -70,7 +70,7 @@ window.addEventListener("scroll", () => animationTwo("languages"));
 
 // CONTACT ANIMATION
 document.getElementById("contact").addEventListener("click", () => {
-  document.documentElement.scrollTop = 2994;
+  document.documentElement.scrollTop = 4000;
 });
 
 const contactAnimation = () => {
