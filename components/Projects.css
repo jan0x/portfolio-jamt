@@ -82,6 +82,7 @@
 
 .porjects-container > section > a:hover > div {
   opacity: 1;
+  visibility: visible;
 }
 
 .porjects-container > section > a:hover > div > h3 {

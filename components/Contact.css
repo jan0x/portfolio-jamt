@@ -1,0 +1,165 @@
+.contact-container {
+  width: 100%;
+  height: 100vh;
+  background: #0d0d0d;
+  display: flex;
+  flex-direction: column-reverse;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.shadow {
+  filter: drop-shadow(0 0 15px #d3d3d3);
+}
+
+.social-media {
+  padding-top: 50vh;
+  background: #d3d3d3;
+  clip-path: circle(150% at 50% 450%);
+  height: 50vh;
+  width: 100%;
+  position: relative;
+}
+
+.quote {
+  position: absolute;
+  bottom: 45px;
+  margin-left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.social-media > section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.social-media > section > ul {
+  display: flex;
+  list-style: none;
+}
+
+.social-media > section > ul > li {
+  margin: 0 15px;
+}
+
+@keyframes socialMedia {
+  from {
+    transform: translate(0, 500px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes hideSocialMedia {
+  from {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  to {
+    transform: translate(0, 500px);
+    opacity: 0;
+  }
+}
+
+.info-contact {
+  width: 100%;
+  height: 43vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.info-contact > h1,
+.info-contact > div {
+  color: #f2f2f2;
+}
+
+.info-contact > h1 {
+  font-size: 50px;
+}
+
+.info-contact > div {
+  font-size: 25px;
+  display: flex;
+  height: 25px;
+  line-height: 25px;
+  overflow: hidden;
+}
+
+.info-contact > div > ul {
+  list-style: none;
+  animation: listAnimation 7s infinite;
+}
+
+.info-contact > span {
+  color: #f2f2f2;
+  font-size: 25px;
+  display: none;
+  font-style: oblique;
+}
+
+@keyframes listAnimation {
+  0% {
+    margin-top: 0;
+  }
+  25% {
+    margin-top: -25px;
+  }
+  50% {
+    margin-top: -50px;
+  }
+  75% {
+    margin-top: -25px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .social-media {
+    clip-path: circle(150% at 50% 200%);
+  }
+
+  .social-media > section {
+    top: 70%;
+  }
+
+  .quote {
+    top: 50%;
+    bottom: auto;
+    display: none;
+  }
+
+  .info-contact {
+    height: 50vh;
+  }
+
+  .info-contact > h1 {
+    font-size: 40px;
+  }
+  .info-contact > div > ul > li {
+    width: auto;
+  }
+
+  .info-contact > div > p,
+  .info-contact > div > ul {
+    font-size: 25px;
+  }
+
+  .info-contact > span {
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    font-size: 15px;
+  }
+}

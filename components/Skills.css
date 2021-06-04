@@ -6,6 +6,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin-bottom: 92vh;
 }
 
 .skills-container > span {
@@ -51,7 +52,7 @@
 
 @keyframes animation4 {
   from {
-    transform: translate(100px, 0);
+    transform: translate(50px, 0);
     opacity: 0;
   }
   to {
@@ -64,6 +65,7 @@
   .skills-container {
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 100vh;
   }
 
   .skills-container > section {
@@ -71,7 +73,7 @@
   }
 
   .skills-container > span {
-    max-width: 85%;
+    max-width: 70%;
   }
 
   .skills-container > span > h2 {

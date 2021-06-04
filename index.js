@@ -68,6 +68,23 @@ const animationFour = (elementId) => {
 window.addEventListener("scroll", () => animationFour("skills-text"));
 window.addEventListener("scroll", () => animationTwo("languages"));
 
+// CONTACT ANIMATION
+document.getElementById("contact").addEventListener("click", () => {
+  document.documentElement.scrollTop = 2994;
+});
+
+const contactAnimation = () => {
+  const animation = document.getElementById("contact-animation");
+  if (document.documentElement.scrollTop > 2420) {
+    animation.style.animation = "socialMedia 1s none";
+    animation.style.opacity = 1;
+  } else {
+    animation.style.animation = "hideSocialMedia 1s none";
+    animation.style.opacity = 0;
+  }
+};
+window.addEventListener("scroll", () => contactAnimation());
+
 // MENU ICON TOGGLE
 window.onscroll = () => {
   let scroll = document.documentElement.scrollTop;
