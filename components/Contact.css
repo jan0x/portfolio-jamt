@@ -238,12 +238,6 @@
     font-size: 15px;
   }
 
-  @media screen and (max-height: 720px) {
-    .social-media {
-      clip-path: circle(150% at 50% 230%);
-    }
-  }
-
   @media screen and (min-height: 800px) {
     .social-media {
       clip-path: circle(150% at 50% 170%);
