@@ -296,7 +296,7 @@
 
   @media screen and (min-height: 800px) and (orientation: portrait) {
     .social-media {
-      clip-path: circle(150% at 50% 165%);
+      clip-path: circle(150% at 50% 155%);
       height: 50vh;
     }
 
