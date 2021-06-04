@@ -31,7 +31,7 @@
   height: 50px;
   width: 150px;
   font-size: 20px;
-  color: rgb(110, 20, 161);
+  color: #0d0d0d;
   font-weight: bolder;
   transition: all 0.5s ease;
   display: flex;
@@ -55,24 +55,24 @@
   transition: all 0.3s ease;
   transition-delay: 2.5s;
   animation: strokeHover 3s normal both;
-  fill: rgb(110, 20, 161);
+  fill: #0d0d0d;
 }
 
 .social-media > a:hover {
   transition: all 0.3s ease;
   transition-delay: 2.5s;
-  color: #0d0d0d;
+  color: #d3d3d3;
 }
 
 @keyframes stroke {
   from {
-    stroke: rgb(110, 20, 161);
+    stroke: #0d0d0d;
     stroke-width: 5;
     stroke-dasharray: 50 150;
     stroke-dashoffset: 350;
   }
   to {
-    stroke: rgb(110, 20, 161);
+    stroke: #0d0d0d;
     stroke-width: 5;
     stroke-dasharray: 50 150;
     stroke-dashoffset: -50;
@@ -80,7 +80,7 @@
 }
 @keyframes strokeHover {
   from {
-    stroke: rgb(110, 20, 161);
+    stroke: #0d0d0d;
     stroke-width: 5;
     stroke-dasharray: 50 150;
     stroke-dashoffset: 350;
