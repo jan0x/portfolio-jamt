@@ -69,9 +69,11 @@ window.addEventListener("scroll", () => animationFour("skills-text"));
 window.addEventListener("scroll", () => animationTwo("languages"));
 
 // CONTACT ANIMATION
-document.getElementById("contact").addEventListener("click", () => {
-  document.documentElement.scrollTop = 10000;
-});
+document.getElementById("contact").onclick = () =>
+  window.scroll({
+    top: 10000,
+    behavior: "smooth",
+  });
 
 const contactAnimation = () => {
   const animation = document.getElementById("contact-animation");
