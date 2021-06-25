@@ -121,7 +121,7 @@ html {
   }
 
   .navbar > label {
-    display: block;
+    z-index: 10;
   }
 
   .navbar > label > div {

@@ -7,6 +7,7 @@
     <title>Diego Díaz Portfolio</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/components//Loader.css" />
     <link rel="stylesheet" href="/components/Header.css" />
     <link rel="stylesheet" href="/components/NavBar.css" />
     <link rel="stylesheet" href="/components/AboutMe.css" />
@@ -15,6 +16,11 @@
     <link rel="stylesheet" href="components/Contact.css" />
   </head>
   <body>
+    <!-- loader -->
+    <div id="loading" class="loader-container">
+      <span class="loader one"></span>
+      <span class="loader two"></span>
+    </div>
     <!-- COVER -->
     <header class="cover" id="cover">
       <video
@@ -26,16 +32,54 @@
       ></video>
       <h1>Diego Díaz</h1>
       <p>Front End Developer</p>
+      <span class="scrollDown">
+        <a href="#about-me">
+          <svg
+            width="100"
+            height="50"
+            viewBox="0 0 100 50"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="Group 1">
+              <path
+                fill="currentColor"
+                id="lineas (Stroke)"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M18.6145 1.68161C18.7903 1.46869 19.1055 1.43864 19.3184 1.61448L50.4769 27.3474L80.6757 1.6194C80.8859 1.44032 81.2015 1.46554 81.3806 1.67574C81.5597 1.88595 81.5345 2.20152 81.3243 2.3806L50.8061 28.3806C50.6215 28.5379 50.3505 28.54 50.1635 28.3855L18.6816 2.38552C18.4687 2.20968 18.4386 1.89453 18.6145 1.68161Z"
+                fill="black"
+              />
+              <path
+                fill="currentColor"
+                id="lineas (Stroke)_2"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M18.6145 11.6816C18.7903 11.4687 19.1055 11.4386 19.3184 11.6145L50.4769 37.3474L80.6757 11.6194C80.8859 11.4403 81.2015 11.4655 81.3806 11.6757C81.5597 11.8859 81.5345 12.2015 81.3243 12.3806L50.8061 38.3806C50.6215 38.5379 50.3505 38.54 50.1635 38.3855L18.6816 12.3855C18.4687 12.2097 18.4386 11.8945 18.6145 11.6816Z"
+                fill="black"
+              />
+              <path
+                fill="currentColor"
+                id="lineas (Stroke)_3"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M18.6145 21.6816C18.7903 21.4687 19.1055 21.4386 19.3184 21.6145L50.4769 47.3474L80.6757 21.6194C80.8859 21.4403 81.2015 21.4655 81.3806 21.6757C81.5597 21.8859 81.5345 22.2015 81.3243 22.3806L50.8061 48.3806C50.6215 48.5379 50.3505 48.54 50.1635 48.3855L18.6816 22.3855C18.4687 22.2097 18.4386 21.8945 18.6145 21.6816Z"
+                fill="black"
+              />
+            </g>
+          </svg>
+        </a>
+      </span>
     </header>
+
     <!-- NAVBAR -->
-    <nav class="navbar">
+    <nav id="show-nav" class="navbar">
       <input type="checkbox" name="menu" id="menu-checkbox" />
       <a href="#cover">
         <div>
           <svg
             class="menu-icon"
             version="1.1"
-            id="Capa_1"
             xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink"
             x="0px"
@@ -60,7 +104,6 @@
             <svg
               class="menu-icon"
               version="1.1"
-              id="Layer_1"
               width="32"
               height="32"
               xmlns="http://www.w3.org/2000/svg"
@@ -91,7 +134,6 @@
           <div>
             <svg
               class="menu-icon"
-              id="bold"
               enable-background="new 0 0 24 24"
               width="32"
               height="32"
@@ -110,7 +152,6 @@
           <div>
             <svg
               class="menu-icon"
-              id="Capa_1"
               enable-background="new 0 0 511.999 511.999"
               height="32"
               viewBox="0 0 511.999 511.999"
@@ -153,7 +194,6 @@
             <svg
               class="menu-icon"
               height="32"
-              id="Email"
               viewBox="0 0 64 64"
               width="32"
               xmlns="http://www.w3.org/2000/svg"
@@ -244,7 +284,11 @@
           <img src="multimedia/404-page.png" alt="project 1 card" />
           <div>
             <h3>404 Single Error Page</h3>
-            <p>This project was done with React.js and SASS.<br><br><b>(ANIMATED)</b></p>
+            <p>
+              This project was done with React.js and SASS.<br /><br /><b
+                >(ANIMATED)</b
+              >
+            </p>
           </div>
         </a>
         <a href="/to-do-list/" target="_blank" rel="noreferrer">
@@ -339,7 +383,7 @@
       </section>
     </div>
     <!-- CONTACT -->
-    <div id="contact" class="contact-container">
+    <div class="contact-container">
       <span class="shadow">
         <div class="social-media" id="contact-animation">
           <a href="mailto:diegodiaz05@gmail.com">
