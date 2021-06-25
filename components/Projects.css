@@ -31,6 +31,7 @@
   max-width: 50%;
   display: flex;
   align-items: center;
+  -ms-scroll-snap-type: x mandatory;
   scroll-snap-type: x mandatory;
   overflow-x: auto;
   padding: 10px 0;
