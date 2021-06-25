@@ -88,8 +88,6 @@ const contactAnimation = () => {
 window.addEventListener("scroll", () => contactAnimation());
 
 // MENU ICON TOGGLE
-window.onload = () =>
-  (document.getElementById("show-nav").style.transform = "scale(0)");
 window.onscroll = () => {
   let scroll = document.documentElement.scrollTop;
   if (scroll > 400) {
@@ -100,8 +98,12 @@ window.onscroll = () => {
   }
 };
 
-// PRELOADER ANIMATION
+// PRELOADER ANIMATION && SHOW MENU
 window.onload = function () {
+  // SHOW MENU
+  document.getElementById("show-nav").style.visibili = "scale(0)";
+
+  //PRELOADER
   document.getElementById("loading").style.opacity = "0";
   document.getElementById("loading").style.visibility = "hidden";
   document.body.style.overflowY = "auto";

@@ -13,6 +13,8 @@ html {
   position: sticky;
   top: 0;
   z-index: 10;
+  transition: all 500ms ease;
+  transform-origin: bottom right;
 }
 
 .navbar > a {
@@ -33,6 +35,7 @@ html {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
+  transition: all 1s ease-in;
 }
 
 .navbar > section > a {
