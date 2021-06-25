@@ -88,24 +88,21 @@ const contactAnimation = () => {
 window.addEventListener("scroll", () => contactAnimation());
 
 // MENU ICON TOGGLE
+window.onload = () =>
+  (document.getElementById("show-menu-icon").style.transform = "scale(0)");
 window.onscroll = () => {
   let scroll = document.documentElement.scrollTop;
   if (scroll > 400) {
-    document.getElementById("show-nav").style.transform = "scale(1)";
+    document.getElementById("show-menu-icon").style.transform = "scale(1)";
   } else {
     document.getElementById("menu-checkbox").checked = false;
-    document.getElementById("show-nav").style.transform = "scale(0)";
+    document.getElementById("show-menu-icon").style.transform = "scale(0)";
   }
 };
 
-// PRELOADER ANIMATION && SHOW MENU
 window.onload = function () {
-  // SHOW MENU
-  document.getElementById("show-nav").style.visibili = "scale(0)";
-
-  //PRELOADER
   document.getElementById("loading").style.opacity = "0";
   document.getElementById("loading").style.visibility = "hidden";
   document.body.style.overflowY = "auto";
-  window.scrollTo(0, 0);
+  window.scrollTo();
 };
